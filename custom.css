@@ -1,0 +1,40 @@
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{background: #000; font-family: 'Roboto', sans-serif;}
+        .bundle_box{background: #fff; width: 500px; height: 600px; margin: 100px auto; padding: 70px 70px 50px 70px; position: relative;}
+        .hr{position: relative; width: 100%; height: 1px; background: #adacacb0; }
+        .hr h1{position: absolute; background: #fff; color: #007f61; font-size: 22px; font-weight: 500;
+             left: calc(50% - 76px); padding: 0px 10px; top: -13px;}
+       .pair_box{display: block; border: 1px solid #d6d6d6; margin-top: 30px; height: 70px; align-items: center; 
+         border-radius: 4px; padding: 20px 30px; justify-content: space-between; font-size: 16px; } 
+         .pair_tow{ padding: 20px 20px; margin-top: 30px; border-radius: 4px;position: relative;}
+         .pair_two_top{display: flex; justify-content: space-between; position: relative;}
+         .left{display: flex; justify-content: space-around;}
+         .most{ color: #007f61;}
+         .left .radio label input[type="radio"]{ display: none;}
+         .left .radio label .radio_btn{height: 20px; width: 20px; border-radius: 50%; border: 2px solid #007f61; position: absolute; top: 10px;}
+         .left_text{margin-left: 40px;}
+         .left .radio label .radio_btn::after{content: ""; height: 12px; width: 12px; background: #007f61; border-radius: 50%; position: absolute; top: 50%; left: 50%;
+              transform: translate(-50%,-50%) scale(1);  transition: 100ms ease-in-out 0s; display: block; }
+        .radio label .radio_btn.selected::after{transform: translate(-50%,-50%) scale(1); }
+         /* .left input[type="radio"]:checked ~ .radio_btn::after{transform: translate(-50%,-50%) scale(1);} */
+        .pair_bottom table{font-size: 12px; font-weight: 100; margin-top: 10px;}
+        .pair_bottom table tr td{width: 50px; padding: 0px 5px; padding-bottom: 5px;}
+        .pair_bottom table tr th{padding-bottom: 5px; font-weight: 100;}
+        .pair_box:hover{height: 150px; border: 1px solid #007f61; background: #d8f1e9f3;}
+        .most{display: none;}
+        .pair_box:hover .most{display: block;}
+        .pair_bottom{display: none;}
+        .pair_box:hover  .pair_bottom{display: block;}
+        .left .radio{display: none;}
+        .pair_box:hover .left .radio{display: block;}
+        .pair_bottom table tr td select {border: none; outline:none; font-size: 12px;}
+        .dkk{color: #333; opacity: 0.6; font-size: 12px; position: absolute; left: 50%; top: 20px; }
+        .shipping{display: flex; justify-content: space-between;}
+        .shipping .free{color: #007f61;}
+        .bottom{position: absolute; bottom: 40px; width: 360px;}
+        .bottom button{width: 100%; background: #007f61; border: none; outline: none; line-height: 40px; border-radius: 4px; color: #fff; margin: 10px 0px;}
+        .bottom .copy{float: right; font-size: 14px; opacity: 0.7;}
+        .pair_box.active { height: 150px; border: 1px solid #007f61; background: #d8f1e9f3;}
+        .pair_box.active .most {display: block;}
+        .pair_box.active .pair_bottom {display: block;}
+        .pair_box.active .left .radio {display: block;}
